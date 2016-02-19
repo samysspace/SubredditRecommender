@@ -51,5 +51,5 @@ def main(username):
   return getRecommendation(username)
   
 if __name__ == "__main__":
-  myUser = raw_input()
+  myUser = raw_input("What is your username? ")
   print(main(myUser))
