@@ -23,7 +23,8 @@ def insertSub(sub, client):
 
 def queryUser(user, client):
   collection = client.Reddit.users
-  collection.update({'username': user}. {"$set": {'subreddits': subreddits}})
+  user = collection.find_one({'username': username})
+  return user
   
 def update(username, subreddits, client):
   collection = client.Reddit.users
